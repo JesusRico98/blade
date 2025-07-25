@@ -3,6 +3,22 @@
 @section('title', 'services')
 
 @section('content')
-<h1>Service</h1>
-<p>this is a service part of page</p>
+    @component('_components.card')
+        @slot('title', 'Service 1')
+        @slot('content', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda sed cum debitis pariatur
+            impedit in saepe aperiam necessitatibus aut, architecto modi, maiores aliquid provident perspiciatis iste quos id
+            enim.')
+    @endcomponent
+    @component('_components.card')
+        @slot('title', 'Service 2')
+        @slot('content', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda sed cum debitis pariatur
+            impedit in saepe aperiam necessitatibus aut, architecto modi, maiores aliquid provident perspiciatis iste quos id
+            enim.')
+    @endcomponent
+    @component('_components.card')
+        @slot('title', 'Service 3')
+        @slot('content', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda sed cum debitis pariatur
+            impedit in saepe aperiam necessitatibus aut, architecto modi, maiores aliquid provident perspiciatis iste quos id
+            enim.')
+    @endcomponent
 @endsection
